@@ -1,4 +1,4 @@
-# Project Name #
+# Astonishing Mosquito #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > 
+  > The ChoZen 
 
 ## Sub-Heading ##
-  > 
+  > Can you reach mental nirvana? 
 
 ## Summary ##
-  > Looking for something to watch but don't know where to watch it? Don't spend time checking every one of your online subscription services. Type in your current and let us tell you where you can find it. Spend less time tracking down your movie and more time on your couch potato marathon.  
+  > Tetris, Angry Bird, Candy Crush, and most recently, Pokemon Go -- simple interactive games are more popular now than ever. This addictive web game syncs game difficulty with your preferred playlist. Choose your favorite song, and see if you can be the last one standing. 
 
 ## Problem ##
-  > There are a multitude of streaming services available these days, with their own catalogues of movies and tv shows. However, spending time to manually check each of the services for your particular watching disire can be time-consuming and ultimately unfruitful. 
+  > Are you someone who turns the sound off in games because it's just too annoying? What if it didn't need to be that way? In fact, what if the music was the deciding factor in how difficult your game play would be? 
 
 ## Solution ##
-  > This website will tell users whether and where it is currently available for free. You will also be able to save "watch lists" for future binge watch sessions. 
+  > The ChoZen syncs music with gaming, where game difficulty is directly determined by the user's chosen song and its tempo, tone, and frequency. Tee up your favorite playlist for hours of addictive play and listening. 
 
 ## Quote from You ##
-  > "We wanted "
+  > "I love listening to music, but sometimes, I want a mental and physical distraction at the same time. This combines the best of all three worlds together in one" - Jay Arella
 
 ## How to Get Started ##
-  > Sign up on the website for your personal account and use our search feature to find the desired movie. If you find more than one movie you'd like to watch, simply save it to your watch list to watch later (or next -- we're not judging!) 
+  > Sign up for your account and invite your friends. 
 
 ## Customer Quote ##
-  > "I've spent hours browsing Netflix, Hulu, and Amazon Prime trying to find that one particular movie I haven't seen in years. Using this website has let me the time I previously spent on searching into watching. "
+  > "I've given up Pokemon Go for this. That's how good it is" - Sunny Virk
 
 ## Closing and Call to Action ##
-  > Reach out to us to start your binge-watch session today. 
+  > Visit http://www.thechozen.com 
