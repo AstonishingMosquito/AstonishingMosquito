@@ -1,9 +1,9 @@
 var express = require('express');
-var morgan = require('morgan'); 
+var morgan = require('morgan');
 var path = require('path');
 var libraryRoute = require('./resources/library/LibraryRoute');
 
-var app = express(); 
+var app = express();
 
 var port = process.env.PORT || 3000;
 
@@ -18,4 +18,3 @@ app.get('/', function(req, res) {
 app.listen(port, function() {
   console.log('Magic happening on port', port);
 });
-
