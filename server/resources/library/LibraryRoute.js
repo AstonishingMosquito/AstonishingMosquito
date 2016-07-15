@@ -5,7 +5,7 @@ var mm = require('musicmetadata');
 
 var multer = require('multer');
 var upload = multer( {
-  dest: path.join(__dirname + '/../../library/') 
+  dest: path.join(__dirname + '/../../library/')
 } );
 
 var router = express.Router();
@@ -25,11 +25,13 @@ router.get('/', function(req, res) {
   })
   .then(function(songFiles) {
     var promises = [];
-    songFiles.forEach(function(song) {
+    songFiles.forEach(function(fileName) {
       promises.push(new Promise(function (resolve,reject) {
-        mm(fs.createReadStream(path.join(__dirname + '/../../library/' + song)), function (err, metadata) {
+        mm(fs.createReadStream(path.join(__dirname + '/../../library/' + fileName)), function (err, metadata) {
+          // Coverart is not currently processed,
+          // so it is removed from the response.
           delete metadata.picture;
-          metadata.fileName = song;
+          metadata.fileName = fileName;
           resolve(metadata);
         });
       }));
@@ -42,8 +44,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', upload.single('song'), function(req, res) {
-  console.log(req.file);
-  res.end('sung');
+  res.end(req.filename);
 });
 
 module.exports = router;
