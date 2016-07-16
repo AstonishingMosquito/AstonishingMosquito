@@ -1,5 +1,4 @@
 import React from 'react';
-import 'whatwg-fetch';
 
 export default (props) => {
   return (

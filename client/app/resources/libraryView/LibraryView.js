@@ -12,8 +12,8 @@ class LibraryView extends React.Component {
   render() {
     return (
       <div>
-        <SongUploadView />
-        {this.props.songs.map(function(song) {
+        <SongUploadView onSubmit={this.props.onSubmit} />
+        {this.props.songs.map((song) => {
           return <LibraryItemView song={song} key={song.id} />;
         })}
       </div>

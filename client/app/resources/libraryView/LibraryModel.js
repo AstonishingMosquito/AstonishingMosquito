@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import 'whatwg-fetch';
 
 var actions = {
   fetchingSongList: function(prevState, data) {
@@ -33,6 +34,23 @@ var mapStateToProps = function(state) {
 
 var mapDispatchToProps = function(dispatch) {
   return {
+    onSubmit: function(e) {
+      var form = new FormData(e.currentTarget);
+      e.preventDefault();
+      fetch(
+        '/library',
+      {
+        method: 'POST',
+        body: form
+      })
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        // Should parse the song and send song data to be smartly added to state
+        document.location.reload();
+      });
+    },
     fetchSongList: () => {
       dispatch({type: 'fetchingSongList', data: null});
       fetch('/library')
