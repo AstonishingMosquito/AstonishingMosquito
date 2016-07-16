@@ -1,6 +1,7 @@
 import React from 'react';
 import { connection } from './LibraryModel';
 import LibraryItemView from '../stateless/LibraryItemView';
+import SongUploadView from '../stateless/SongUploadView';
 
 class LibraryView extends React.Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class LibraryView extends React.Component {
   render() {
     return (
       <div>
-        {this.props.songs.map(function(song) {
+        <SongUploadView onSubmit={this.props.onSubmit} />
+        {this.props.songs.map((song) => {
           return <LibraryItemView song={song} key={song.id} />;
         })}
       </div>
