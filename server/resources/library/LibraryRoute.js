@@ -44,7 +44,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', upload.single('song'), function(req, res) {
-  res.end(req.filename);
+  res.send({filename: req.file.filename});
 });
 
 module.exports = router;
