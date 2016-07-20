@@ -7,11 +7,8 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 
-app.use(morgan('dev'));
-
 app.use('/assets', express.static(path.join(__dirname + '/../client/assets')));
 app.use('/build', express.static(path.join(__dirname + '/../client/build')));
-app.use('/songLibrary', express.static(path.join(__dirname + '/library')));
 app.use('/library', libraryRoute);
 
 app.get('/', function(req, res) {

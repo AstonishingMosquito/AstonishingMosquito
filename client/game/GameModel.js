@@ -33,11 +33,6 @@ var actions = {
     return Object.assign({}, prevState, {
       entities: entities
     });
-  },
-  addAudioController: function(prevState, target) {
-    return Object.assign({}, prevState, {
-      audioController: target
-    });
   }
 };
 

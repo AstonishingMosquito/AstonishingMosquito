@@ -1,8 +1,6 @@
 // Each entity must have a container property so that it may be
 // added to the stage.
 export default class Entity {
-    // clarify the difference between the container
-    // and the things added to the container
     constructor(store) {
       this.store = store;
       this.container = new PIXI.Container();

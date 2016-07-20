@@ -1,20 +1,15 @@
 import { getStore } from './GameModel';
 import Beatbox from './resources/entities/Beatbox';
 import Player from './resources/entities/Player';
-import AudioController from './resources/controllers/AudioController';
 
 class Game {
   constructor (id) {
     this.renderer = new PIXI.autoDetectRenderer(800, 600);
-    this.node = document.getElementById(id);
-    this.node.appendChild(this.renderer.view);
-
-    this.audioController = new AudioController(this.store, {node: this.node});
+    document.getElementById(id).appendChild(this.renderer.view);
 
     this.stage = new PIXI.Container();
 
     this.store = getStore();
-    this.store.dispatch({type: 'addAudioController', data: this.audioController});
     this.store.dispatch({type: 'addStage', data: this.stage});
     this.store.dispatch({type: 'addRenderer', data: this.renderer});
 
