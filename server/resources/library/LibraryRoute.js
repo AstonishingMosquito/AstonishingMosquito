@@ -9,9 +9,10 @@ var multer = require('multer'); // Multi-part form upload parser used to handle 
 
 var songLibraryPath = path.join(__dirname + '/../../songLibrary/');
 
-// Directs song upload to be saved in songLibrary folder 
-var upload = multer( { 
-  dest: songLibraryPath
+// Directs song upload to be saved in songLibrary folder
+var upload = multer( {
+  dest: songLibraryPath,
+  limits: {fileSize: 1000000, files: 1}
 } ).single('song');
 
 var router = express.Router();
@@ -52,7 +53,7 @@ router.post('/', function (req, res) {
     .catch(function(error) {
       console.log('musicmetadata error', error);
     })
-    // Add the metadata to the redis database 
+    // Add the metadata to the redis database
     .then(function(metadata) {
       // calculates file hash for redis key
       return md5File(req.file.path)
