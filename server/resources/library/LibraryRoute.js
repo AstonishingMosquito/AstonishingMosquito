@@ -12,7 +12,7 @@ var songLibraryPath = path.join(__dirname + '/../../songLibrary/');
 // Directs song upload to be saved in songLibrary folder
 var upload = multer( {
   dest: songLibraryPath,
-  limits: {fileSize: 1000000, files: 1}
+  limits: {fileSize: 100000000, files: 1}
 } ).single('song');
 
 var router = express.Router();
